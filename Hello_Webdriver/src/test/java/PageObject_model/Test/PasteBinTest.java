@@ -26,20 +26,19 @@ public class PasteBinTest {
         // Закрываем всплывающее окно, если оно появится
         homePage.closePopup();
 
-        // Вводим текст нового паста
+        // Вводим текст 
         homePage.NewPaste("Hello from WebDriver");
 
-        // Выбираем время жизни паста
+        // Выбираем время жизни 
         homePage.ExpirationPasteChoice.click();
         homePage.TenMinutes();
 
-        // Вводим название паста
+        // Вводим название 
         homePage.PasteNameChoice("helloweb");
 
-        // Создаем новый паст
+        // Создаем новый Paste
         homePage.CreateNewPasteButton();
 
-        // Здесь можно добавить проверки, чтобы убедиться, что паст был создан успешно
     }
 
     @AfterClass
